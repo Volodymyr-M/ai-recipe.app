@@ -1,0 +1,148 @@
+/* Shared styles for Snap2Recipe legal documents */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+h3 {
+    color: #5a6c7d;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+h4 {
+    color: #7f8c8d;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+.meta-info {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.meta-info p {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.compliance-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.service-provider {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    border-left: 4px solid #ffc107;
+}
+
+.important-section {
+    background: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #ffc107;
+}
+
+.legal-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
