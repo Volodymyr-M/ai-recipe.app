@@ -1,1 +1,484 @@
-<p>ai recipe app</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snap &amp; Cook | Turn Food Photos into Recipes You Can Cook Tonight</title>
+  <meta name="description" content="Snap &amp; Cook transforms any food photo into a personalized, step-by-step recipe so you can recreate restaurant dishes, rescue leftovers, and cook with confidence in minutes.">
+  <meta name="keywords" content="food recognition app, recipe from photo, AI cooking assistant, ingredient scanner, personalized recipes">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ai-recipe.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Snap &amp; Cook | Turn Food Photos into Recipes You Can Cook Tonight">
+  <meta property="og:description" content="Go from craving to cooking in minutes. Snap &amp; Cook converts any dish or ingredient photo into chef-tested recipes tailored to your taste.">
+  <meta property="og:url" content="https://ai-recipe.app/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=1600&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Snap &amp; Cook | Turn Food Photos into Recipes You Can Cook Tonight">
+  <meta name="twitter:description" content="Transform food photos into chef-ready recipes personalized to your taste in seconds.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=1600&q=80">
+  <meta name="theme-color" content="#f5f7fb">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/landing.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='6' x2='42' y1='6' y2='42' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232d72ff'/%3E%3Cstop offset='1' stop-color='%231a56db'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='42' height='42' x='3' y='3' rx='12' fill='url(%23a)'/%3E%3Cpath fill='%23fff' d='M32.6 15.2c2.2 0 4 1.8 4 4.1 0 6.3-6.6 11.5-12.7 14.9-6.1-3.4-12.7-8.6-12.7-14.9 0-2.3 1.8-4.1 4-4.1 2.8 0 3.8 2.7 4.6 4.6.6 1.6 1.2 3 2.1 3 1 0 1.6-1.4 2.1-3 .8-1.9 1.8-4.6 4.6-4.6z'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Snap & Cook",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "https://schema.org/FoodApplication",
+    "description": "Snap & Cook converts food photos into personalized, step-by-step recipes you can cook tonight.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://ai-recipe.app/",
+    "image": "https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=1200&q=80",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Snap & Cook"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="#top">
+        <span class="brand-logo" aria-hidden="true">SC</span>
+        Snap &amp; Cook
+      </a>
+      <ul class="nav-links">
+        <li><a href="#outcomes">Outcomes</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#proof">Proof</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button type="button" class="nav-cta download-trigger" aria-haspopup="dialog" aria-controls="download-overlay">
+        <span class="cta-icons" aria-hidden="true">
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S13.326 0 12 0zm7.2 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S20.526 0 19.2 0zM5.1 4.68 3.186 2.766l-.786.786 1.968 2.07A11.55 11.55 0 0 0 0 13.2v8.4c0 .663.537 1.2 1.2 1.2h1.92v2.13c0 .59.477 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h5.16v2.13c0 .59.476 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h1.92c.663 0 1.2-.537 1.2-1.2v-8.4c0-3.9-1.598-7.392-4.368-9.888l1.968-2.07-.786-.786L15.9 4.68A11.357 11.357 0 0 0 12 3.6c-1.398 0-2.73.252-3.936.72zm1.8 9.12c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8zm8.2 0c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8z"/>
+              </svg>
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.338 5.788c1.08-1.336 1.938-3.28 1.64-5.188-1.556.064-3.38 1.005-4.458 2.34-.978 1.216-1.836 3.216-1.578 5.1 1.68.072 3.42-1.02 4.396-2.252zM21.59 17.32c-.132-.032-3.788-1.035-3.788-3.96 0-2.133 1.994-3.08 2.048-3.108-.032-.096-.81-2.31-2.66-2.33-1.27-.024-2.334.78-2.983.78-.67 0-1.695-.74-2.783-.72-1.4.024-2.683.865-3.45 2.15-1.49 2.48-.395 6.18 1.086 8.213.72 1.01 1.57 2.062 2.67 2.028 1.02-.04 1.36-.66 2.67-.66 1.296 0 1.61.66 2.663.64 1.17-.02 1.91-1.008 2.613-2.046.454-.663.805-1.36 1.053-2.095z"/>
+              </svg>
+            </span>
+            <span class="cta-label">Get the app</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Cook what you crave</p>
+        <h1 id="hero-title">Turn any food photo into a recipe you can cook tonight</h1>
+        <p class="hero-lede">Snap &amp; Cook transforms restaurant dishes, fridge finds, and cookbook inspiration into step-by-step recipes tailored to your taste, diet, and pantry. Capture the moment, cook the magic.</p>
+        <div class="hero-highlights">
+          <div class="hero-highlight">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3l2-3h8l2 3h3a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </span>
+            <span>Instantly recognize dishes and ingredients from a single snap.</span>
+          </div>
+          <div class="hero-highlight">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21l-8-4.5V7.5L12 3l8 4.5v9L12 21z"></path>
+                <path d="M12 12l8-4.5"></path>
+                <path d="M12 12v9"></path>
+                <path d="M12 12L4 7.5"></path>
+              </svg>
+            </span>
+            <span>Recipe suggestions auto-match your preferences and pantry staples.</span>
+          </div>
+          <div class="hero-highlight">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <polyline points="12 7 12 12 15 15"></polyline>
+              </svg>
+            </span>
+            <span>Guided cooking mode keeps you hands-free with timers and voice cues.</span>
+          </div>
+        </div>
+        <div class="hero-download" id="download">
+          <button type="button" class="nav-cta download-trigger" aria-haspopup="dialog" aria-controls="download-overlay">
+            <span class="cta-icons" aria-hidden="true">
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S13.326 0 12 0zm7.2 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S20.526 0 19.2 0zM5.1 4.68 3.186 2.766l-.786.786 1.968 2.07A11.55 11.55 0 0 0 0 13.2v8.4c0 .663.537 1.2 1.2 1.2h1.92v2.13c0 .59.477 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h5.16v2.13c0 .59.476 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h1.92c.663 0 1.2-.537 1.2-1.2v-8.4c0-3.9-1.598-7.392-4.368-9.888l1.968-2.07-.786-.786L15.9 4.68A11.357 11.357 0 0 0 12 3.6c-1.398 0-2.73.252-3.936.72zm1.8 9.12c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8zm8.2 0c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8z"/>
+              </svg>
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.338 5.788c1.08-1.336 1.938-3.28 1.64-5.188-1.556.064-3.38 1.005-4.458 2.34-.978 1.216-1.836 3.216-1.578 5.1 1.68.072 3.42-1.02 4.396-2.252zM21.59 17.32c-.132-.032-3.788-1.035-3.788-3.96 0-2.133 1.994-3.08 2.048-3.108-.032-.096-.81-2.31-2.66-2.33-1.27-.024-2.334.78-2.983.78-.67 0-1.695-.74-2.783-.72-1.4.024-2.683.865-3.45 2.15-1.49 2.48-.395 6.18 1.086 8.213.72 1.01 1.57 2.062 2.67 2.028 1.02-.04 1.36-.66 2.67-.66 1.296 0 1.61.66 2.663.64 1.17-.02 1.91-1.008 2.613-2.046.454-.663.805-1.36 1.053-2.095z"/>
+              </svg>
+            </span>
+            <span class="cta-label">Get the app</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-card">
+          <img src="images/hero.png" alt="Snap &amp; Cook app displaying a scanned meal with recipe steps on a kitchen counter">
+        </div>
+      </div>
+    </section>
+
+    <section class="section mood-gallery" aria-labelledby="gallery-heading">
+      <div class="section-header">
+        <h2 id="gallery-heading">Inspiration from bustling home kitchens</h2>
+        <p>Every photo captured with Snap &amp; Cook becomes a spark for dinner. Explore the meals, ingredients, and makers fueling our community.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--feature">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Chef plating pasta with fresh herbs">
+          <figcaption>Plating restaurant-worthy pasta at home.</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--stack">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Friends cooking together around a kitchen island">
+          <figcaption>Cooking together makes every scan a shared moment.</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--stack">
+          <img src="https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?auto=format&fit=crop&w=800&q=80" alt="Fresh vegetables, herbs, and spices laid out for cooking">
+          <figcaption>Turn pantry staples into colorful spreads.</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1200&q=80" alt="Home cook taking a photo of a brunch spread with a phone">
+          <figcaption>Snap, learn, and recreate your favorite bites.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="outcomes" aria-labelledby="outcomes-heading">
+      <div class="section-header">
+        <h2 id="outcomes-heading">Designed for real-life cooking wins</h2>
+        <p>Snap &amp; Cook helps you turn inspiration into dinner—whether you fell in love with a restaurant dish, need to rescue leftovers, or want to cook what's already in your fridge.</p>
+      </div>
+      <div class="metrics" role="list">
+        <div class="metric-card" role="listitem">
+          <div class="metric-value">92%</div>
+          <div class="metric-label">of beta cooks recreate restaurant dishes on the first try</div>
+        </div>
+        <div class="metric-card" role="listitem">
+          <div class="metric-value">15 hrs</div>
+          <div class="metric-label">saved per month planning meals and searching for recipes</div>
+        </div>
+        <div class="metric-card" role="listitem">
+          <div class="metric-value">3&times;</div>
+          <div class="metric-label">more likely to use leftovers before they expire</div>
+        </div>
+      </div>
+      <div class="outcomes-list">
+        <article class="outcome-row">
+          <div class="outcome-media">
+            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=800&q=80" alt="Cook finishing a plated entree with garnish">
+          </div>
+          <div class="outcome-content">
+            <div class="outcome-icon icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16v5H4z"></path>
+                <path d="M9 9v11"></path>
+                <path d="M15 9v11"></path>
+                <path d="M4 14h16"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Recreate unforgettable dishes</h3>
+              <p>Capture the plate, and Snap &amp; Cook instantly delivers a step-by-step recipe with timing, plating tips, and chef-level guidance.</p>
+            </div>
+          </div>
+        </article>
+        <article class="outcome-row">
+          <div class="outcome-media">
+            <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=800&q=80" alt="Fresh produce laid out on a kitchen table for meal prep">
+          </div>
+          <div class="outcome-content">
+            <div class="outcome-icon icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11h18"></path>
+                <path d="M6 5h12l1 6H5z"></path>
+                <path d="M7 11v7"></path>
+                <path d="M17 11v7"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Cook with what you already have</h3>
+              <p>Scan ingredients on your counter and get meals you can make right now—no last-minute grocery runs.</p>
+            </div>
+          </div>
+        </article>
+        <article class="outcome-row">
+          <div class="outcome-media">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Colorful bowls of plant-based ingredients on a table">
+          </div>
+          <div class="outcome-content">
+            <div class="outcome-icon icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6z"></path>
+                <circle cx="12" cy="9" r="2"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3>Eat for your goals</h3>
+              <p>Filters recipes by your dietary preferences so every suggestion fits how you want to eat.</p>
+            </div>
+          </div>
+        </article>
+        <article class="outcome-row">
+          <div class="outcome-media">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80" alt="Daily meal inspiration board with recipes and notes">
+          </div>
+          <div class="outcome-content">
+            <div class="outcome-icon icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M19 5v6l-2-2"></path>
+                <path d="M5 19v-6l2 2"></path>
+                <path d="M8 11a4 4 0 1 1 8 0c0 2.5-4 7-4 7s-4-4.5-4-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>Stay inspired every day</h3>
+              <p>Daily recipe nudges use your scan history to surprise you with ideas you can cook tonight.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works" aria-labelledby="how-heading">
+      <div class="section-header">
+        <h2 id="how-heading">From snap to supper in three steps</h2>
+        <p>Snap &amp; Cook combines visual recognition, smart substitutions, and guided cooking so you never get stuck.</p>
+      </div>
+      <div class="how-it-works">
+        <div class="step">
+          <div class="step-media">
+            <img class="step-photo" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Diner photographing a restaurant dish with a smartphone">
+            <span class="step-number">1</span>
+          </div>
+          <h3>Snap a dish or your ingredients</h3>
+          <p>Use the adaptive Smart Detect button to capture a plated meal, ingredients, or even a cookbook photo.</p>
+        </div>
+        <div class="step">
+          <div class="step-media">
+            <img class="step-photo" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Cook reviewing recipe suggestions on a tablet">
+            <span class="step-number">2</span>
+          </div>
+          <h3>Get recipes that match your taste</h3>
+          <p>Our AI analyzes what it sees, cross-checks your preferences, and proposes personalized recipes with smart swaps.</p>
+        </div>
+        <div class="step">
+          <div class="step-media">
+            <img class="step-photo" src="https://images.unsplash.com/photo-1514986888952-8cd320577b68?auto=format&fit=crop&w=800&q=80" alt="Home cook stirring a pot while following instructions on a phone">
+            <span class="step-number">3</span>
+          </div>
+          <h3>Follow guided cooking mode</h3>
+          <p>Hands-free timers, voice navigation, and substitution hints keep you confident from prep to plating.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proof" aria-labelledby="proof-heading">
+      <div class="section-header">
+        <h2 id="proof-heading">Loved by home cooks and food explorers</h2>
+        <p>From busy parents to adventurous foodies, Snap &amp; Cook brings dinner goals to life. Here's what early users are saying.</p>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="icon-badge" aria-hidden="true">P</div>
+          <p>“I finally recreated the truffle pasta from my birthday dinner. Snap &amp; Cook nailed the flavors and even suggested a wine pairing!”</p>
+          <span>— Priya M., NYC</span>
+        </div>
+        <div class="testimonial">
+          <div class="icon-badge" aria-hidden="true">J</div>
+          <p>“No more wasted produce. I scan my fridge on Sunday and have five dinners planned in five minutes.”</p>
+          <span>— Jordan L., Austin</span>
+        </div>
+        <div class="testimonial">
+          <div class="icon-badge" aria-hidden="true">M</div>
+          <p>“The guided cooking mode is magic. Voice control plus step timers means I can cook without smudging my phone.”</p>
+          <span>— Mei W., Seattle</span>
+        </div>
+      </div>
+      <div class="section-header press-intro">
+        <p>As seen in</p>
+      </div>
+      <div class="press-logos" aria-label="Press logos">
+        <img src="https://dummyimage.com/160x36/ffffff/000000&text=FoodTech+Daily" alt="FoodTech Daily">
+        <img src="https://dummyimage.com/140x36/ffffff/000000&text=Kitchen+Lab" alt="Kitchen Lab">
+        <img src="https://dummyimage.com/120x36/ffffff/000000&text=HomeChef+Weekly" alt="HomeChef Weekly">
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-heading">
+      <div class="section-header">
+        <h2 id="faq-heading">Questions home cooks ask us</h2>
+        <p>If you're curious, you're in good company. Here are the answers people want before their first scan.</p>
+      </div>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Does it work with low-light restaurant photos?</h3>
+          <p>Yes. Snap &amp; Cook enhances dim or uneven lighting so you get reliable recognition whether you’re dining out or eating in.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I adjust recipes for dietary needs?</h3>
+          <p>Set your preferences once and we automatically surface recipes—and smart substitutions—that match your likes, dislikes, and allergies.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Will it help with meal planning?</h3>
+          <p>Absolutely. Save scans, build weekly lineups, and export grocery lists or share recipes for group planning.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What phones are supported?</h3>
+          <p>Snap &amp; Cook runs on current iOS and Android devices. iPhone users can enable voice control for hands-free cooking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">See what dinner looks like when AI backs you up</h2>
+      <p>Take a photo, get a plan, cook with confidence. Snap &amp; Cook keeps your cravings on the table and food waste out of the bin.</p>
+      <div class="cta-photo-grid" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+      </div>
+      <div class="final-cta-actions">
+        <button type="button" class="nav-cta download-trigger" aria-haspopup="dialog" aria-controls="download-overlay">
+          <span class="cta-icons" aria-hidden="true">
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S13.326 0 12 0zm7.2 0c-1.326 0-2.4 1.074-2.4 2.4s1.074 2.4 2.4 2.4 2.4-1.074 2.4-2.4S20.526 0 19.2 0zM5.1 4.68 3.186 2.766l-.786.786 1.968 2.07A11.55 11.55 0 0 0 0 13.2v8.4c0 .663.537 1.2 1.2 1.2h1.92v2.13c0 .59.477 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h5.16v2.13c0 .59.476 1.07 1.07 1.07h1.62c.59 0 1.07-.48 1.07-1.07V22.8h1.92c.663 0 1.2-.537 1.2-1.2v-8.4c0-3.9-1.598-7.392-4.368-9.888l1.968-2.07-.786-.786L15.9 4.68A11.357 11.357 0 0 0 12 3.6c-1.398 0-2.73.252-3.936.72zm1.8 9.12c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8zm8.2 0c.994 0 1.8.806 1.8 1.8 0 .995-.806 1.8-1.8 1.8-.995 0-1.8-.805-1.8-1.8 0-.994.805-1.8 1.8-1.8z"/>
+              </svg>
+              <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.338 5.788c1.08-1.336 1.938-3.28 1.64-5.188-1.556.064-3.38 1.005-4.458 2.34-.978 1.216-1.836 3.216-1.578 5.1 1.68.072 3.42-1.02 4.396-2.252zM21.59 17.32c-.132-.032-3.788-1.035-3.788-3.96 0-2.133 1.994-3.08 2.048-3.108-.032-.096-.81-2.31-2.66-2.33-1.27-.024-2.334.78-2.983.78-.67 0-1.695-.74-2.783-.72-1.4.024-2.683.865-3.45 2.15-1.49 2.48-.395 6.18 1.086 8.213.72 1.01 1.57 2.062 2.67 2.028 1.02-.04 1.36-.66 2.67-.66 1.296 0 1.61.66 2.663.64 1.17-.02 1.91-1.008 2.613-2.046.454-.663.805-1.36 1.053-2.095z"/>
+              </svg>
+            </span>
+            <span class="cta-label">Get the app</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="download-overlay" id="download-overlay" hidden>
+    <div class="download-dialog" role="dialog" aria-modal="true" aria-label="Download Snap &amp; Cook" tabindex="-1">
+      <button type="button" class="download-close" aria-label="Close download options">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="download-options">
+        <a class="download-option" href="https://play.google.com/store/apps/details?id=com.snap2recipe" rel="noopener">
+          <span class="download-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.574 2.53 7.333.951l-.848.6 1.26 1.75A6.995 6.995 0 0 0 4 9v5.5a2 2 0 0 0 2 2h1v1.75a1.75 1.75 0 0 0 3.5 0V16.5h2v1.75a1.75 1.75 0 0 0 3.5 0V16.5h1a2 2 0 0 0 2-2V9a6.995 6.995 0 0 0-3.745-5.7l1.26-1.75-.848-.6-1.242 1.58A6.958 6.958 0 0 0 12 4a6.958 6.958 0 0 0-3.426-1.47ZM9.5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+            </svg>
+          </span>
+          <span class="download-text">
+            <strong>Android</strong>
+            <small>Open Google Play Store</small>
+          </span>
+        </a>
+        <a class="download-option" href="https://apps.apple.com/app/id000000000" rel="noopener">
+          <span class="download-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.242 4.51c1.218-.052 2.642-.84 3.455-1.93-.89-.057-2.147.58-2.833 1.346-.613.69-1.153 1.806-.95 2.863Zm4.23 9.847c-.086-.055-3.17-1.556-3.063-4.58.07-2.386 2.046-3.66 2.13-3.715-.728-1.13-1.86-2-3.378-1.993-.92.009-1.905.606-2.54.606-.66 0-1.62-.585-2.67-.57-1.372.022-2.63.79-3.34 2.01-1.562 2.63-.417 6.666 1.12 9.053.74 1.12 1.62 2.38 2.69 2.34 1.04-.04 1.39-.68 2.64-.68 1.23 0 1.55.68 2.65.66 1.15-.02 1.88-1.01 2.59-2.12.655-1.02.955-1.95.977-2.012Z"/>
+            </svg>
+          </span>
+          <span class="download-text">
+            <strong>iOS</strong>
+            <small>Download on the App Store</small>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-content">
+      <span>&copy; <span id="year"></span> Snap &amp; Cook. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="terms_of_service.html">Terms of Service</a>
+        <a href="mailto:hello@ai-recipe.app">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const yearEl = document.getElementById('year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
+      const overlay = document.getElementById('download-overlay');
+      if (!overlay) {
+        return;
+      }
+
+      const dialog = overlay.querySelector('.download-dialog');
+      const closeButton = overlay.querySelector('.download-close');
+      const triggers = document.querySelectorAll('.download-trigger');
+      let lastTrigger = null;
+
+      function openOverlay(trigger) {
+        lastTrigger = trigger || document.activeElement;
+        overlay.hidden = false;
+        requestAnimationFrame(() => {
+          overlay.classList.add('is-visible');
+          if (dialog) {
+            dialog.focus();
+          }
+        });
+      }
+
+      function closeOverlay() {
+        overlay.classList.remove('is-visible');
+
+        const finish = () => {
+          if (!overlay.hidden) {
+            overlay.hidden = true;
+          }
+        };
+
+        overlay.addEventListener('transitionend', finish, { once: true });
+        window.setTimeout(finish, 220);
+
+        if (lastTrigger && typeof lastTrigger.focus === 'function') {
+          lastTrigger.focus();
+        }
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', (event) => {
+          event.preventDefault();
+          openOverlay(trigger);
+        });
+      });
+
+      if (closeButton) {
+        closeButton.addEventListener('click', closeOverlay);
+      }
+
+      overlay.addEventListener('click', (event) => {
+        if (event.target === overlay) {
+          closeOverlay();
+        }
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !overlay.hidden) {
+          closeOverlay();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
