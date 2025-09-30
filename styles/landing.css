@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #2d72ff;
-  --color-primary-dark: #1a56db;
+  --color-primary: #16a34a;
+  --color-primary-dark: #15803d;
   --color-accent: #ff8a5b;
   --color-bg: #f5f7fb;
   --color-surface: #ffffff;
@@ -71,7 +71,7 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(45, 114, 255, 0.95), rgba(26, 86, 219, 0.85));
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.95), rgba(21, 128, 61, 0.85));
   display: grid;
   place-items: center;
   color: #fff;
@@ -302,7 +302,7 @@ main {
   padding: 16px 20px 20px;
   font-size: 0.92rem;
   color: var(--color-muted);
-  background: linear-gradient(180deg, rgba(45, 114, 255, 0.05), rgba(45, 114, 255, 0));
+  background: linear-gradient(180deg, rgba(22, 163, 74, 0.05), rgba(22, 163, 74, 0));
 }
 
 .gallery-item--feature {
@@ -431,7 +431,7 @@ main {
   width: 44px;
   height: 44px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(45, 114, 255, 0.18), rgba(26, 86, 219, 0.16));
+  background: linear-gradient(135deg, rgba(22, 163, 74, 0.18), rgba(21, 128, 61, 0.16));
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -456,9 +456,9 @@ main {
 }
 
 .testimonial::before {
-  content: '“';
+  content: '"';
   font-size: 3rem;
-  color: rgba(45, 114, 255, 0.2);
+  color: rgba(22, 163, 74, 0.2);
   position: absolute;
   top: 12px;
   left: 20px;
@@ -641,7 +641,7 @@ main {
   border-radius: 16px;
   display: grid;
   place-items: center;
-  background: rgba(45, 114, 255, 0.12);
+  background: rgba(22, 163, 74, 0.12);
   color: var(--color-primary-dark);
 }
 
@@ -694,7 +694,7 @@ footer a:focus {
   border-radius: 16px;
   display: grid;
   place-items: center;
-  background: rgba(45, 114, 255, 0.12);
+  background: rgba(22, 163, 74, 0.12);
   color: var(--color-primary-dark);
   font-size: 1.3rem;
 }
