@@ -1,10 +1,10 @@
-# Guidance for AI Agents Working on Snap & Cook Marketing Site
+# Guidance for AI Agents Working on Love2Cook Marketing Site
 
 ## Mission
-Maintain and evolve the Snap & Cook marketing website so it continues to convert curious visitors into confident app users by emphasizing real-world outcomes and delivering a trustworthy, accessible experience.
+Maintain and evolve the Love2Cook marketing website so it continues to convert curious visitors into confident app users by emphasizing real-world outcomes and delivering a trustworthy, accessible experience.
 
 ## Core Principles
-- **Outcome-first storytelling:** Lead with how Snap & Cook improves the cook’s life before discussing features or technology.
+- **Outcome-first storytelling:** Lead with how Love2Cook improves the cook's life before discussing features or technology.
 - **Trust & credibility:** Retain data points, testimonials, and social proof. Any new claims must be plausible, consistent with `app_requirements.md`, and ideally sourced.
 - **Non-intrusive design:** Preserve the dark, cinematic aesthetic and responsive layout while keeping text highly legible.
 
